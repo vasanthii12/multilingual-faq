@@ -18,7 +18,7 @@ A Django-based FAQ management system with multilingual support, built using Djan
   - Image upload capabilities
   - Clean and valid HTML output
 
-![Dashboard](overview/login_page.jpeg)
+![Dashboard](overview/login.jpeg)
 
 ### API Features
 - **RESTful API**
@@ -39,7 +39,7 @@ A Django-based FAQ management system with multilingual support, built using Djan
   - Preview translations
   - Rich text editing support
   - Bulk actions support
-![Dashboard](overview/faq.jpeg)
+![Dashboard](overview/faqPage.jpeg)
 
 ## Technologies Used
 
@@ -122,6 +122,8 @@ python manage.py createsuperuser
 ```bash
 python manage.py runserver
 ```
+
+Then you can run the application on http://127.0.0.1:8000/admin/ 
 
 ## API Usage
 
