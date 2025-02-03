@@ -2,15 +2,91 @@
 
 A Django-based FAQ management system with multilingual support, built using Django REST Framework and CKEditor 5.
 
-## Features
+### Core Features
+- **Multilingual Support**
+  - Support for 30+ languages including:
+    - Indian languages (Hindi, Bengali, Telugu, Tamil, etc.)
+    - European languages (Spanish, French, German, etc.)
+    - Asian languages (Chinese, Japanese, Korean, etc.)
+  - Automatic translation using Google Translate
+  - Language fallback to English when translation is unavailable
 
-- Rich text editing with CKEditor 5
-- Support for 30+ languages
-- Automatic translation using Google Translate
-- REST API with language selection
-- Efficient caching mechanism
-- Clean and simple admin interface
+### Content Management
+- **Rich Text Editing**
+  - Modern WYSIWYG editor (CKEditor 5)
+  - Support for text formatting, lists, and links
+  - Image upload capabilities
+  - Clean and valid HTML output
 
+![Dashboard](overview/login_page.jpeg)
+
+### API Features
+- **RESTful API**
+  - Language selection via query parameters
+  - JSON responses with translated content
+  - Pagination support
+  - Filter and search capabilities
+
+### Performance
+- **Caching System**
+  - Translation caching for 24 hours
+  - Reduced API calls to translation service
+  - Improved response times
+
+### Admin Interface
+- **User-friendly Admin Panel**
+  - Easy FAQ management
+  - Preview translations
+  - Rich text editing support
+  - Bulk actions support
+![Dashboard](overview/faq.jpeg)
+
+## Technologies Used
+
+### Backend
+- **Django 5.1.5**
+  - High-level Python web framework
+  - ORM for database operations
+  - Admin interface
+
+- **Django REST Framework**
+  - API development
+  - Serialization
+  - Authentication
+  - Viewsets and routers
+
+### Database
+- **SQLite** (default)
+  - Lightweight database
+  - Zero configuration required
+  - Suitable for development and small to medium deployments
+
+### Editor
+- **CKEditor 5**
+  - Modern WYSIWYG editor
+  - Customizable toolbar
+  - Clean HTML output
+  - Image upload support
+![Dashboard](overview/user.jpeg)
+### Translation
+- **Google Translate**
+  - Automatic translation
+  - Support for 30+ languages
+  - Fallback mechanisms
+![Dashboard](overview/faq2.jpeg)
+
+### Caching
+- **Django's Cache Framework**
+  - Memory-based caching
+  - Translation result caching
+  - Configurable cache timeout
+
+### Testing
+- **Django Test Framework**
+  - Unit tests
+  - API tests
+  - Model tests
+  - 
 ## Installation
 
 1. Clone the repository:
@@ -84,6 +160,7 @@ Content-Type: application/json
     "language": "en"
 }
 ```
+![Dashboard](overview/translate.jpeg)
 
 ## Running Tests
 
@@ -98,17 +175,3 @@ python manage.py test
 3. Commit your changes (`git commit -m 'feat: Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## Commit Message Convention
-
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation only changes
-- `style`: Changes that do not affect the meaning of the code
-- `refactor`: Code change that neither fixes a bug nor adds a feature
-- `test`: Adding missing tests
-- `chore`: Changes to the build process or auxiliary tools
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
