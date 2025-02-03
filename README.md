@@ -39,7 +39,7 @@ A Django-based FAQ management system with multilingual support, built using Djan
   - Preview translations
   - Rich text editing support
   - Bulk actions support
-![Dashboard](overview/faqPage.jpeg)
+![Dashboard](overview/FaqPage.jpeg)
 
 ## Technologies Used
 
